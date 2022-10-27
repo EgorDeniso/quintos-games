@@ -6,7 +6,7 @@ async function start() {
 	while (guess != num) {
 		guess = await prompt('guess a number');
 
-		if (num == guess) {
+		if (guess == num) {
 			await alert('you got it right');
 		} else if (guess < num) {
 			await alert('too low');
